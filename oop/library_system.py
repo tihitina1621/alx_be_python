@@ -23,7 +23,6 @@ class Library:
         
         
         self.books.append(book)
-        return book
     def list_books(self):
         for book in self.books:
             print(book)
