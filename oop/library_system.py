@@ -8,7 +8,7 @@ class EBook(Book):
     def __init__(self, title, author, file_size):
         super().__init__(title, author)
         self.file_size = file_size
-    def __str__(self):
+    def new2(self):
         print(f'EBook: {self.title} by {self.author}, File Size: {self.file_size}')        
 class PrintBook(Book):
     def __init__(self, title, author, page_count):
@@ -16,17 +16,21 @@ class PrintBook(Book):
         self.page_count = page_count
     def new(self):
         print(f'PrintBook: {self.title} by {self.author}, page count: {self.page_count}')
+books = []
 class Library:
-    def __init__(self, books):
-        self.books = books
-    def add_book(self,book):
+    def add_book(self, book):
         self.book = book
-        book = []
-        book.append(self.books)
+        global books
+        books = []
+        books.append(self.book)
         return book
     def list_books(self):
+        global books
+        print(books)
 
 my_library = Library()
+
+    # Create instances of each type of book
 classic_book = Book("Pride and Prejudice", "Jane Austen")
 digital_novel = EBook("Snow Crash", "Neal Stephenson", 500)
 paper_novel = PrintBook("The Catcher in the Rye", "J.D. Salinger", 234)
@@ -36,5 +40,7 @@ my_library.add_book(classic_book)
 my_library.add_book(digital_novel)
 my_library.add_book(paper_novel)
 
-my_library.list_books() 
-   #library_system.py doesn't contain: ["self.books = []", "append"]
+    # List all books in the library
+my_library.list_books()
+
+
