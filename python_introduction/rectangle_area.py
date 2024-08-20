@@ -1,4 +1,4 @@
-l = 10
-w = 5
-Area = l*w
-print(f'The area of the rectangle is: {Area}')
+length = 10
+width = 5
+area = length*width
+print(f'The area of the rectangle is: {area}')
