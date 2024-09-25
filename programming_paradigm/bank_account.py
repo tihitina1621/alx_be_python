@@ -7,4 +7,4 @@ class BankAccount:
     def withdraw(self, amount):
         account_balance -= amount
     def diaplay_balace():
-        print('Your current balance is ',account_balance)
+        print('Current Balance: ',account_balance)
