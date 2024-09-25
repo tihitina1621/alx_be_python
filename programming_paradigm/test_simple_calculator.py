@@ -12,4 +12,4 @@ class TestSimpleCalculator(unittest.TestCase):
     def test_multiplication(self):
         self.assertEqual(self.calc.multiply(4,5),3)
     def test_division(self):
-        self.asserEqual(self.calc.divide(9,7),8)
+        self.assertEqual(self.calc.divide(9,7),8)
