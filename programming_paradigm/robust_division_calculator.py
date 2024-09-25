@@ -9,7 +9,7 @@ def safe_divide(numerator, denominator):
         print('Error: Please enter numeric values only.')
     else:        
         print(f'The result of the division is {float(numerator // denominator)}' ) 
-    
+    pass
 
 
 
