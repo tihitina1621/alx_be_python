@@ -6,5 +6,5 @@ class BankAccount:
         account_balance = account_balance + amount
     def withdraw(self, amount):
         account_balance -= amount
-    def display_balace():
+    def display_balance():
         print('Current Balance: ',account_balance)
