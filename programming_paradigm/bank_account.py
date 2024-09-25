@@ -3,8 +3,10 @@ class BankAccount:
         self.account_balance = account_balance
         account_balance = 0
     def deposit(self, amount):
+        self.account_balance = account_balance
         account_balance = account_balance + amount
     def withdraw(self, amount):
+        self.account_balance = account_balance
         account_balance -= amount
-    def display_balance():
-        print('Current Balance: ',account_balance)
+    def display_balance(self):
+        print('Current Balance: ',self.account_balance)
