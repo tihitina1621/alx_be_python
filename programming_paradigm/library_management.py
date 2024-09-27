@@ -1,7 +1,13 @@
-class Library:
-    def __init__(self, title, author):
+class Book:
+    def __init__(self, title, author, _is_checked_out):
         self.title = title
         self.author = author
+        self._is_checked_out = _is_checked_out
+    def get_is_checked_out(self):
+        return self._is_checked_out
+class Library:
+    def __init__(self, _books):
+        self._books = _books
     def add_book(title, author):
         global books 
         books = {}
