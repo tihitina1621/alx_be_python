@@ -9,6 +9,7 @@ class Library:
     def __init__(self):
         #self._books = _books
         True
+        list_available_books(self)
     def add_book(self, title, author, _book):
         self._books = []
         _book.update({title: author})
