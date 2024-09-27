@@ -8,11 +8,11 @@ class Book:
 class Library:
     def __init__(self):
         #self._books = _books
-    def add_book(title, author):
-        global books 
-        books = {}
-        books.update({title: author})
-        return books
+
+    def add_book(self, title, author, _book):
+        book = {}
+        book.update({title: author})
+        return _book(self)
     def check_out_book(title):
         books_checked_out = []
         global books
