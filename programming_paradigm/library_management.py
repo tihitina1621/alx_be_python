@@ -10,7 +10,7 @@ class Library:
         #self._books = _books
         True
     def add_book(self, title, author, _book):
-        self._book = []
+        self._books = []
         _book.update({title: author})
         return_book(self)
     def check_out_book(title):
